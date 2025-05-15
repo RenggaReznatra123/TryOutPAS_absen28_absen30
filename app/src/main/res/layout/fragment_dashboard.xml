@@ -5,9 +5,17 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:text="Premier"
-        android:textSize="24sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_premier"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 </LinearLayout>
+
+<!--premiere-->
