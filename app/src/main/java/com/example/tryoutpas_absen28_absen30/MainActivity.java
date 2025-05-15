@@ -17,15 +17,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Hubungkan BottomNavigationView dengan ID di XML
+
         bottomNavigationView = findViewById(R.id.navigasi);
 
-        // Tampilkan fragment default pertama kali (LaLiga)
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frame_layout, new PremierleagueFragment())
                 .commit();
 
-        // Listener ketika user klik menu bawah
+
         bottomNavigationView.setOnItemSelectedListener(item -> {
             Fragment fragment = null;
             int itemId = item.getItemId();
